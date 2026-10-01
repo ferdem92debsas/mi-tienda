@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Catálogo de productos de electrónica, ferretería y artículos deportivos."
+    >
+
+    <title>Mi Tienda | Catálogo</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         ENCABEZADO
+    ========================================== -->
+
+    <header class="header">
+
+        <div class="contenedor header-contenido">
+
+            <a href="#" class="logo">
+                MI TIENDA
+            </a>
+
+            <nav class="navegacion">
+
+                <a href="#inicio">Inicio</a>
+
+                <a href="#electronica">
+                    Electrónica
+                </a>
+
+                <a href="#ferreteria">
+                    Ferretería
+                </a>
+
+                <a href="#deportes">
+                    Deportes
+                </a>
+
+            </nav>
+
+            <button
+                id="btn-carrito"
+                class="boton-carrito"
+                type="button"
+            >
+                🛒 Carrito
+                <span id="contador-carrito">0</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         CONTENIDO PRINCIPAL
+    ========================================== -->
+
+    <main id="inicio">
+
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="contenedor hero-contenido">
+
+                <div class="hero-texto">
+
+                    <span class="etiqueta">
+                        CATÁLOGO ONLINE
+                    </span>
+
+                    <h1>
+                        Encontrá lo que necesitás
+                    </h1>
+
+                    <p>
+                        Electrónica, ferretería y artículos
+                        deportivos por encargo.
+                    </p>
+
+                    <a
+                        href="#productos"
+                        class="boton-principal"
+                    >
+                        Ver productos
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             CATEGORÍAS
+        ====================================== -->
+
+        <section class="categorias">
+
+            <div class="contenedor">
+
+                <div class="titulo-seccion">
+
+                    <span>EXPLORÁ</span>
+
+                    <h2>
+                        Nuestras categorías
+                    </h2>
+
+                </div>
+
+
+                <div class="categorias-grid">
+
+
+                    <button
+                        class="categoria-card"
+                        data-categoria="Electronica"
+                    >
+
+                        <span class="categoria-icono">
+                            💻
+                        </span>
+
+                        <h3>
+                            Electrónica
+                        </h3>
+
+                        <p>
+                            PC, celulares y accesorios
+                        </p>
+
+                    </button>
+
+
+                    <button
+                        class="categoria-card"
+                        data-categoria="Ferreteria"
+                    >
+
+                        <span class="categoria-icono">
+                            🔨
+                        </span>
+
+                        <h3>
+                            Ferretería
+                        </h3>
+
+                        <p>
+                            Herramientas y accesorios
+                        </p>
+
+                    </button>
+
+
+                    <button
+                        class="categoria-card"
+                        data-categoria="Deportes"
+                    >
+
+                        <span class="categoria-icono">
+                            ⚽
+                        </span>
+
+                        <h3>
+                            Deportes
+                        </h3>
+
+                        <p>
+                            Fútbol, fitness y accesorios
+                        </p>
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             CATÁLOGO
+        ====================================== -->
+
+        <section
+            id="productos"
+            class="catalogo"
+        >
+
+            <div class="contenedor">
+
+
+                <div class="titulo-seccion">
+
+                    <span>CATÁLOGO</span>
+
+                    <h2>
+                        Productos
+                    </h2>
+
+                </div>
+
+                <section id="catalogo">
+
+                     </section>
+
+
+                <!-- BUSCADOR -->
+
+                <div class="herramientas-catalogo">
+
+                    <div class="buscador">
+
+                        <span>🔎</span>
+
+                        <input
+                            type="search"
+                            id="buscador-productos"
+                            placeholder="Buscar productos..."
+                        >
+
+                    </div>
+
+
+                    <!-- FILTRO -->
+
+                    <select
+                        id="filtro-categoria"
+                    >
+
+                        <option value="todos">
+                            Todas las categorías
+                        </option>
+
+                        <option value="Electronica">
+                            Electrónica
+                        </option>
+
+                        <option value="Ferreteria">
+                            Ferretería
+                        </option>
+
+                        <option value="Deportes">
+                            Deportes
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- PRODUCTOS -->
+
+                <div
+                    id="contenedor-productos"
+                    class="productos-grid"
+                >
+
+                    <!--
+                        JavaScript va a colocar
+                        aquí las tarjetas.
+                    -->
+
+                </div>
+
+
+                <!-- MENSAJE SIN RESULTADOS -->
+
+                <div
+                    id="sin-resultados"
+                    class="sin-resultados oculto"
+                >
+
+                    <span>🔎</span>
+
+                    <h3>
+                        No encontramos productos
+                    </h3>
+
+                    <p>
+                        Probá con otra búsqueda.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================================
+         CARRITO
+    ========================================== -->
+
+    <aside
+        id="panel-carrito"
+        class="panel-carrito"
+    >
+
+        <div class="carrito-header">
+
+            <h2>
+                Mi carrito
+            </h2>
+
+            <button
+                id="cerrar-carrito"
+                type="button"
+                aria-label="Cerrar carrito"
+            >
+                ✕
+            </button>
+
+        </div>
+
+
+        <div
+            id="items-carrito"
+            class="items-carrito"
+        >
+
+            <!-- JavaScript coloca los productos aquí -->
+
+        </div>
+
+
+        <div class="carrito-footer">
+
+            <div class="carrito-total">
+
+                <span>
+                    Total estimado
+                </span>
+
+                <strong id="total-carrito">
+                    $0
+                </strong>
+
+            </div>
+
+
+            <button
+                id="btn-whatsapp"
+                class="boton-whatsapp"
+                type="button"
+            >
+                💬 Solicitar pedido
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- FONDO DEL CARRITO -->
+
+    <div
+        id="overlay"
+        class="overlay"
+    ></div>
+
+
+    <!-- =========================================
+         PIE DE PÁGINA
+    ========================================== -->
+
+    <footer class="footer">
+
+        <div class="contenedor">
+
+            <div class="footer-contenido">
+
+                <div>
+
+                    <h3>
+                        MI TIENDA
+                    </h3>
+
+                    <p>
+                        Catálogo online de productos
+                        por encargo.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h4>
+                        Categorías
+                    </h4>
+
+                    <p>
+                        Electrónica
+                    </p>
+
+                    <p>
+                        Ferretería
+                    </p>
+
+                    <p>
+                        Deportes
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h4>
+                        Contacto
+                    </h4>
+
+                    <p>
+                        Consultas y pedidos
+                        por WhatsApp.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Mi Tienda.
+                    Todos los derechos reservados.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="js/productos.js"></script>
+
+    <script src="js/carrito.js"></script>
+
+    <script src="js/whatsapp.js"></script>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

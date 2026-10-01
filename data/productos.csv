@@ -1,0 +1,14 @@
+id,nombre,categoria,subcategoria,descripcion,precio,moneda,imagen,estado,destacado
+ELEC001,Mouse inalámbrico,Electronica,Accesorios,Mouse inalámbrico USB,12500,ARS,mouse-inalambrico.jpg,disponible,si
+ELEC002,Teclado mecánico,Electronica,PC,Teclado mecánico RGB,35000,ARS,teclado-mecanico.jpg,por_encargo,no
+ELEC003,Cargador USB-C,Electronica,Celulares,Cargador rápido USB-C,18000,ARS,cargador-usbc.jpg,disponible,si
+ELEC004,Auriculares Bluetooth,Electronica,Accesorios,Auriculares inalámbricos Bluetooth,28000,ARS,auriculares-bluetooth.jpg,por_encargo,no
+FERR001,Destornillador Phillips,Ferreteria,Herramientas,Destornillador profesional,6500,ARS,destornillador.jpg,disponible,no
+FERR002,Pinza universal,Ferreteria,Herramientas,Pinza universal de acero,8500,ARS,pinza-universal.jpg,disponible,si
+FERR003,Set de llaves,Ferreteria,Herramientas,Set de llaves combinadas,22000,ARS,set-llaves.jpg,por_encargo,no
+FERR004,Cinta aisladora,Ferreteria,Electricidad,Cinta aisladora profesional,2500,ARS,cinta-aisladora.jpg,disponible,no
+DEP001,Banda elástica,Deportes,Fitness,Banda para entrenamiento,9000,ARS,banda-elastica.jpg,disponible,si
+DEP002,Balón de fútbol,Deportes,Futbol,Balón de fútbol profesional,25000,ARS,balon-futbol.jpg,por_encargo,si
+DEP003,Guantes de entrenamiento,Deportes,Fitness,Guantes para entrenamiento deportivo,12000,ARS,guantes-entrenamiento.jpg,disponible,no
+DEP004,Cuerda para saltar,Deportes,Fitness,Cuerda regulable para entrenamiento,7500,ARS,cuarda-saltar.jpg,por_encargo,no
+
