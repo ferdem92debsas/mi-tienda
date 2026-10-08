@@ -106,8 +106,7 @@ function actualizarCarrito() {
 
         const item = document.createElement("div");
 
-        item.classList.add("carrito-item");
-
+          item.classList.add("carrito-item"); 
 
         item.innerHTML = `
             <div class="carrito-item-info">
@@ -194,6 +193,9 @@ function actualizarContador() {
 // ==========================================
 // ABRIR CARRITO
 // ==========================================
+
+const botonCarrito = document.querySelector(".boton-carrito");
+botonCarrito.addEventListener("click", abrirCarrito);
 
 function abrirCarrito() {
 
